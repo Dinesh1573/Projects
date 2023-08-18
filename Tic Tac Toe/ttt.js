@@ -1,18 +1,10 @@
 let cross = "X";
 let zero = "O";
 let count = 0;
-let one = document.querySelector(".one");
-let two = document.querySelector(".two");
-let three = document.querySelector(".three");
-let four = document.querySelector(".four");
-let five = document.querySelector(".five");
-let six = document.querySelector(".six");
-let seven = document.querySelector(".seven");
-let eight = document.querySelector(".eight");
-let nine = document.querySelector(".nine");
 let p = document.querySelector("p");
 let restart = document.querySelector(".restart");
 
+let one = document.querySelector(".one");
 one.addEventListener("click", () => {
     if(count % 2 == 0) {
         one.innerText = cross;
@@ -23,6 +15,7 @@ one.addEventListener("click", () => {
     check();
 })
 
+let two = document.querySelector(".two");
 two.addEventListener("click", () => {
     if(count % 2 == 0) {
         two.innerText = cross;
@@ -32,6 +25,7 @@ two.addEventListener("click", () => {
     count++;
 })
 
+let three = document.querySelector(".three");
 three.addEventListener("click", () => {
     if(count % 2 == 0) {
         three.innerText = cross;
@@ -42,6 +36,7 @@ three.addEventListener("click", () => {
     check();
 })
 
+let four = document.querySelector(".four");
 four.addEventListener("click", () => {
     if(count % 2 == 0) {
         four.innerText = cross;
@@ -52,6 +47,7 @@ four.addEventListener("click", () => {
     check();
 })
 
+let five = document.querySelector(".five");
 five.addEventListener("click", () => {
     if(count % 2 == 0) {
         five.innerText = cross;
@@ -62,6 +58,7 @@ five.addEventListener("click", () => {
     check();
 })
 
+let six = document.querySelector(".six");
 six.addEventListener("click", () => {
     if(count % 2 == 0) {
         six.innerText = cross;
@@ -72,6 +69,7 @@ six.addEventListener("click", () => {
     check();
 })
 
+let seven = document.querySelector(".seven");
 seven.addEventListener("click", () => {
     if(count % 2 == 0) {
         seven.innerText = cross;
@@ -82,6 +80,7 @@ seven.addEventListener("click", () => {
     check();
 })
 
+let eight = document.querySelector(".eight");
 eight.addEventListener("click", () => {
     if(count % 2 == 0) {
         eight.innerText = cross;
@@ -92,6 +91,7 @@ eight.addEventListener("click", () => {
     check();
 })
 
+let nine = document.querySelector(".nine");
 nine.addEventListener("click", () => {
     if(count % 2 == 0) {
         nine.innerText = cross;
@@ -180,13 +180,9 @@ function check() {
 }
 
 restart.addEventListener("click", () => {
-    one.innerText = "";
-    two.innerText = "";
-    three.innerText = "";
-    four.innerText = "";
-    five.innerText = "";
-    six.innerText = "";
-    seven.innerText = "";
-    eight.innerText = "";
-    nine.innerText = "";
+    let arr = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+    
+    for(let i=0; i<arr.length; i++) {
+        arr[i].innerText = "";
+    }
 })
