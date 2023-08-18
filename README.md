@@ -1,3 +1,2 @@
 # Projects
-Projects related to Web Development, 
-Anyone who wants to add suggestions to make code better, are mostly welcome
+Projects related to Web Development, Anyone who wants to add suggestions to make code better, are mostly welcome.
