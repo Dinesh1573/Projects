@@ -180,9 +180,10 @@ function check() {
 }
 
 restart.addEventListener("click", () => {
-    let arr = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+    let arr = [one, two, three, four, five, six, seven, eight, nine];
     
     for(let i=0; i<arr.length; i++) {
         arr[i].innerText = "";
+        console.log(arr[i].innerText);
     }
 })
